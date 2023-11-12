@@ -204,7 +204,7 @@ body {
   background-color: #313338;
   padding: 10px;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   position: relative;
 }
@@ -260,8 +260,8 @@ body {
 
 // item
 .item {
-  height: 121.5px;
-  width: 100px;
+  height: 108.4px;
+  width: 90px;
   position: relative;
   margin: 5px;
 
@@ -276,9 +276,9 @@ body {
 
   .title {
     position: absolute;
-    top: 96px;
+    top: 85px;
     margin: 5px;
-    width: 90px;
+    width: 80px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

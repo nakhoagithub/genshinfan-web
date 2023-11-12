@@ -2,6 +2,7 @@ import { Col, Divider, Row } from "antd";
 import ImageCharacter from "./image";
 import Image from "next/image";
 import { getUrlElement, getUrlStar, getUrlWeapon } from "@/utils/tool";
+import dayjs from "dayjs";
 
 const LayoutInfo = ({ item }: { item: any }) => {
   const spanHeader = 8;
@@ -131,6 +132,20 @@ const LayoutInfo = ({ item }: { item: any }) => {
               style={{ width: "100%", position: "relative" }}
             >
               {item?.fetter?.detail}
+            </div>
+          </Col>
+        </Row>
+
+        <Row className="item-info" style={{ width: "100%" }}>
+          <Col className="item-info-header" span={spanHeader}>
+            <div>Thời gian ra mắt: </div>
+          </Col>
+          <Col className="item-info-content" span={spanContent}>
+            <div
+              className="column align-center"
+              style={{ width: "100%", position: "relative" }}
+            >
+              {dayjs.unix(item?.release ?? 0).format("MMMM D, YYYY")}
             </div>
           </Col>
         </Row>

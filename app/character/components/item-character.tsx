@@ -22,15 +22,15 @@ const ItemCharacter = ({
         className="background"
         src={getUrlBg(rank)}
         alt="Background"
-        height={121.5}
-        width={100}
+        height={108.4}
+        width={90}
       />
       <Image
         className="image"
         src={`https://api.ambr.top/assets/UI/${icon}.png`}
         alt="Background"
-        height={100.2}
-        width={100}
+        height={90}
+        width={90}
       />
       <div className="title">{title}</div>
       {getUrlElement(element) && (
