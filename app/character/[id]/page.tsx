@@ -32,9 +32,9 @@ export default function ({ params }: { params: { id: string } }) {
   }, []);
 
   return (
-    <div className="content-item">
+    <div className="background">
       <BackgroundCharacter item={item} />
-      <div className="layout wrap">
+      <div className="content-item wrap">
         <Info item={item} />
       </div>
     </div>

@@ -4,6 +4,7 @@ import "./globals.scss";
 import { ConfigProvider, Layout } from "antd";
 import Header from "@/components/header/header";
 import Content from "@/components/content/content";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <NextTopLoader />
         <ConfigProvider
           theme={{
             token: {
